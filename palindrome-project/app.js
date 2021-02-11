@@ -1,10 +1,9 @@
-const arrAlphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
- "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-
+const otherChara = /[\W_]/g;
 function palindrome (str){
-    if(str == "test"){
-        return true
+    const wordReverse = str.replace(otherChara, '').toLowerCase().split('').reverse().join('');
+    const wordOriginal = str.replace(otherChara, '').toLowerCase()
+    if(wordReverse == wordOriginal){
+        return true;
     }
+    return false;
 }
-
-console.log(arrAlphabet.includes('a'))
