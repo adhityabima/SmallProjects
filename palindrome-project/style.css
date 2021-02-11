@@ -1,4 +1,19 @@
+body{
+    background-color: #101820;
+}
+
 .form-container{
     position: absolute;
     top: 10vh;
+    background-color: #eedaea;
+}
+
+.btn{
+    background-color: #cf6bdd;
+    color: white;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #ff5253;
 }

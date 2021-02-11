@@ -7,9 +7,9 @@ function palindrome (str){
     const wordReverse = str.replace(otherChara, '').toLowerCase().split('').reverse().join('');
     const wordOriginal = str.replace(otherChara, '').toLowerCase()
     if(wordReverse == wordOriginal){
-        result.innerHTML = `"${input.value}" is a Palindrome!`
+        result.innerHTML = `Your input is a Palindrome!`
     }
-    result.innerHTML = `"${input.value}" is not a Palindrome`
+    result.innerHTML = `Your input is not a Palindrome`
 }
 
 palinForm.addEventListener('submit',(e) => {
