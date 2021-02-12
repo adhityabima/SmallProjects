@@ -9,7 +9,38 @@
     <title>Score Keeper</title>
 </head>
 <body>
-    something
+    <div class="container-flex">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="card" style="width: 50rem;">
+                    <img class="card-img-top" src="badmintonmatch.jpg" alt="Card image cap">
+                    <div class="card-header">
+                        <h1 class="display-4">
+                            Badminton Score Keeper
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <section id="scoreKeeper">
+                            <h1 class="d-inline" id ="p1TotalScore">0</h1>
+                            <p class="d-inline">to</p>
+                            <h1 class="d-inline" id ="p2TotalScore">0</h1>
+                        </section>
+
+                        <select class="custom-select my-2" id="selectBestOf">
+                            <option selected>--Play Best of--</option>
+                            <option value="bo1">Best of 1</option>
+                            <option value="bo3">Best of 3</option>
+                            <option value="bo5">Best of 5</option>
+                          </select>
+                          <button type="button" id="addP1" class="btn btn-primary">+1 Player 1</button>
+                          <button type="button" id="addP2" class="btn btn-primary">+1 Player 2</button>
+                          <button type="button" id="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
